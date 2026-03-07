@@ -1,0 +1,24 @@
+node_modules
+dist
+.env
+artifacts
+cache
+coverage
+fhevmTemp
+types
+coverage.json
+typechain-types
+
+# Hardhat
+deployments/localhost
+deployments/sepolia
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

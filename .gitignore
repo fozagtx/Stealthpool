@@ -22,3 +22,5 @@ deployments/sepolia
 # OS
 .DS_Store
 Thumbs.db
+frontend/.next
+*.tsbuildinfo

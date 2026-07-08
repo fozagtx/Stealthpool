@@ -107,7 +107,7 @@ export default function Home() {
 
         <motion.h1 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">
           <span className="gradient-text">Confidential</span><br />
-          <span className="text-white">ShadowPool</span>
+          <span className="text-white">StealthPool</span>
         </motion.h1>
 
         <motion.p variants={fadeUp} className="text-default-500 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed px-4">
@@ -193,7 +193,7 @@ export default function Home() {
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-green-500">
               <Icon icon="solar:radar-2-linear" className="h-4 w-4 text-white" />
             </div>
-            <span className="text-sm font-bold gradient-text">ShadowPool</span>
+            <span className="text-sm font-bold gradient-text">StealthPool</span>
           </div>
           <div className="flex items-center gap-6">
             <Link href="https://zama.ai" target="_blank" className="text-xs text-default-500 hover:text-purple-400 transition-colors">Zama fhEVM</Link>

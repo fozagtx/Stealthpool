@@ -2,13 +2,13 @@
 pragma solidity ^0.8.27;
 
 /**
- * @title ConfidentialShadowPool
+ * @title StealthPool
  * @notice Privacy-preserving swap pool using Zama fhEVM.
  *         Users create encrypted swap intents (limit orders) directly on-chain.
  *         Amounts are encrypted using euint128 — no one except the creator
  *         and matched counterparty can see the trade size.
  *
- *         This mirrors the ShadowPool concept but replaces iExec TEE + Uniswap v4 hook
+ *         This mirrors the StealthPool concept but replaces iExec TEE + Uniswap v4 hook
  *         with pure on-chain FHE.
  *
  * @dev Inherits ZamaEthereumConfig to automatically configure fhEVM coprocessor
@@ -28,7 +28,7 @@ pragma solidity ^0.8.27;
 import {FHE, euint128, ebool, externalEuint128} from "@fhevm/solidity/lib/FHE.sol";
 import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract ConfidentialShadowPool is ZamaEthereumConfig {
+contract StealthPool is ZamaEthereumConfig {
     // ═══════════════════════════════════════════════════════════════════════════
     //  Types
     // ═══════════════════════════════════════════════════════════════════════════

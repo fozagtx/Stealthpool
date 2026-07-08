@@ -80,7 +80,7 @@ function AppShell({ children }: { children: React.ReactNode }) {
               <Icon icon="solar:radar-2-linear" className="h-5 w-5 text-white" />
             </div>
             <Link href="/" className="text-xl font-extrabold tracking-tight">
-              <span className="gradient-text">ShadowPool</span>
+              <span className="gradient-text">StealthPool</span>
             </Link>
           </motion.div>
         </NavbarBrand>

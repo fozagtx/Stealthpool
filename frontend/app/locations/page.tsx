@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { useAccount, useConnect, useDisconnect, useWriteContract } from "wagmi";
 import { injected } from "wagmi/connectors";
-import { CONTRACT_ADDRESSES, POOL_ABI } from "../../lib/contracts";
+import { CONTRACT_ADDRESSES, STEALTH_POOL_ABI } from "../../lib/contracts";
 import { createEncryptedInput } from "../../lib/zama";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
@@ -53,10 +53,7 @@ export default function CreateIntentPage() {
     setTxHash("");
     setIsEncrypting(true);
     try {
-      const ca = CONTRACT_ADDRESSES.confidentialShadowPool;
-      if (!ca || ca === "0x0000000000000000000000000000000000000000") {
-        throw new Error("Pool contract address not configured. Set NEXT_PUBLIC_POOL_CONTRACT_ADDRESS in .env");
-      }
+      const ca = CONTRACT_ADDRESSES.stealthPool;
       const amtInt = parseInt(amountIn);
       const minInt = parseInt(minOut);
       const dl = Math.floor(Date.now() / 1000) + parseInt(deadline) * 3600;
@@ -74,7 +71,7 @@ export default function CreateIntentPage() {
 
       const tx = await writeContractAsync({
         address: ca as `0x${string}`,
-        abi: POOL_ABI,
+        abi: STEALTH_POOL_ABI,
         functionName: "createIntent",
         args: [
           tokenIn as `0x${string}`,

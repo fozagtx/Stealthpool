@@ -37,7 +37,7 @@ const config: HardhatUserConfig = {
       chainId: 31337,
     },
     sepolia: {
-      accounts: { mnemonic: MNEMONIC, path: "m/44'/60'/0'/0/", count: 10 },
+      accounts: [vars.get("DEPLOYER_PRIVATE_KEY", "")].filter(Boolean),
       chainId: 11155111,
       url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
     },

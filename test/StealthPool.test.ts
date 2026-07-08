@@ -1,8 +1,8 @@
 import { HardhatEthersSigner } from "@nomicfoundation/hardhat-ethers/signers";
 import { ethers, fhevm } from "hardhat";
 import {
-  ConfidentialShadowPool,
-  ConfidentialShadowPool__factory,
+  StealthPool,
+  StealthPool__factory,
 } from "../types";
 import { expect } from "chai";
 import { FhevmType } from "@fhevm/hardhat-plugin";
@@ -16,8 +16,8 @@ type Signers = {
 };
 
 async function deployFixture() {
-  const factory = (await ethers.getContractFactory("ConfidentialShadowPool")) as ConfidentialShadowPool__factory;
-  const contract = (await factory.deploy()) as ConfidentialShadowPool;
+  const factory = (await ethers.getContractFactory("StealthPool")) as StealthPool__factory;
+  const contract = (await factory.deploy()) as StealthPool;
   const contractAddress = await contract.getAddress();
   return { contract, contractAddress };
 }
@@ -28,9 +28,9 @@ const TOKEN_C = "0x3333333333333333333333333333333333333333";
 const SELL_AMT = 1_000_000;
 const MIN_OUT = 500_000;
 
-describe("ConfidentialShadowPool", function () {
+describe("StealthPool", function () {
   let signers: Signers;
-  let contract: ConfidentialShadowPool;
+  let contract: StealthPool;
   let contractAddress: string;
 
   before(async function () {

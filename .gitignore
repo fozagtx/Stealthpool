@@ -24,11 +24,7 @@ deployments/sepolia
 Thumbs.db
 frontend/.next
 *.tsbuildinfo
-hooks/
-hooks/lib/
-hooks/out/
 hooks/lib/
 hooks/out/
 hooks/cache/
 hooks/.github/
-hooks/

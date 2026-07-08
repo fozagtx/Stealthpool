@@ -6,15 +6,15 @@
 
 @layer base {
   :root {
-    --shadowpool-purple: #a855f7;
-    --shadowpool-teal: #22c55e;
-    --shadowpool-deep-purple: #1a0a2e;
-    --shadowpool-dark: #0a0a0f;
-    --shadowpool-card: #12121a;
-    --shadowpool-border: rgba(255, 255, 255, 0.06);
-    --shadowpool-glow-purple: rgba(168, 85, 247, 0.15);
-    --shadowpool-glow-teal: rgba(34, 197, 94, 0.15);
-    --shadowpool-gradient: linear-gradient(135deg, #a855f7, #22c55e);
+    --stealth-purple: #a855f7;
+    --stealth-teal: #22c55e;
+    --stealth-deep-purple: #1a0a2e;
+    --stealth-dark: #0a0a0f;
+    --stealth-card: #12121a;
+    --stealth-border: rgba(255, 255, 255, 0.06);
+    --stealth-glow-purple: rgba(168, 85, 247, 0.15);
+    --stealth-glow-teal: rgba(34, 197, 94, 0.15);
+    --stealth-gradient: linear-gradient(135deg, #a855f7, #22c55e);
   }
 
   html {
@@ -127,11 +127,11 @@
 }
 
 @layer utilities {
-  .bg-shadowpool-dark {
+  .bg-stealth-dark {
     background-color: #0a0a0f;
   }
 
-  .bg-shadowpool-card {
+  .bg-stealth-card {
     background-color: #12121a;
   }
 }

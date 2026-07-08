@@ -34,7 +34,7 @@ export const CONTRACT_NAMES = {
 // ── Deployed contract addresses (hardcoded, not secrets) ──
 export const DEPLOYED_ADDRESSES = {
   sepolia: {
-    stealthPool: "0x9754ce1CBb685d7269e52e67e92A3130bDCd04e9",
+    stealthPool: "0x34B31DecAB31BfE93eC03Ab2DE441841EbC2b9F5",
   },
   hardhat: {
     stealthPool: "0x5FbDB2315678afecb367f032d93F642f64180aa3",

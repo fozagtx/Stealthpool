@@ -124,6 +124,27 @@
     background: rgba(168, 85, 247, 0.4);
     animation: particle-drift 20s linear infinite;
   }
+
+  /* ---- Mobile Safe Area ---- */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  /* ---- Touch-friendly targets ---- */
+  .touch-target {
+    @apply relative;
+    min-height: 44px;
+  }
+
+  .touch-target::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+  }
 }
 
 @layer utilities {

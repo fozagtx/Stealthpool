@@ -11,7 +11,6 @@ export const CHAIN_CONFIG = {
   chainId: chain.chainId,
   rpcUrl: process.env.NEXT_PUBLIC_RPC_URL || `${chain.rpc}${process.env.NEXT_PUBLIC_INFURA_KEY || ""}`,
   relayerUrl: process.env.NEXT_PUBLIC_RELAYER_URL || ZAMA.relayerUrl,
-  explorer: chain.explorer,
   currency: chain.currency,
 };
 

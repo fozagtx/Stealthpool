@@ -7,7 +7,7 @@ import { CONTRACT_ADDRESSES, STEALTH_POOL_ABI } from "../../lib/contracts";
 import { createEncryptedInput } from "../../lib/zama";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
-import { Card, CardBody, CardHeader, Button, Input, Select, SelectItem, Chip, Progress, Link, cn } from "@heroui/react";
+import { Card, CardBody, CardHeader, Button, Input, Select, SelectItem, Chip, Progress, cn } from "@heroui/react";
 
 const TOKENS = [
   { value: "0x0000000000000000000000000000000000000000", label: "ETH (Native)" },
@@ -165,7 +165,7 @@ export default function CreateIntentPage() {
                       <Icon icon="solar:check-circle-linear" className="h-5 w-5 text-green-400 shrink-0 mt-0.5" />
                       <div className="min-w-0">
                         <p className="text-xs font-semibold text-green-300 mb-1">Intent Created</p>
-                        <Link href={`https://sepolia.etherscan.io/tx/${txHash}`} target="_blank" rel="noopener noreferrer" className="text-[11px] text-default-500 hover:text-purple-400 break-all transition-colors">{txHash}</Link>
+                        <span className="text-[11px] text-default-500 break-all font-mono">{txHash}</span>
                       </div>
                     </div>
                   </div>

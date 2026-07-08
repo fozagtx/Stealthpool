@@ -7,7 +7,7 @@ import { CONTRACT_ADDRESSES, STEALTH_POOL_ABI } from "../../lib/contracts";
 import { createEncryptedInput } from "../../lib/zama";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
-import { Card, CardBody, CardHeader, Button, Input, Chip, Progress, Link, cn } from "@heroui/react";
+import { Card, CardBody, CardHeader, Button, Input, Chip, Progress, cn } from "@heroui/react";
 
 export default function MatchTradePage() {
   const { address, isConnected } = useAccount();
@@ -149,8 +149,7 @@ export default function MatchTradePage() {
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm font-semibold text-green-300 mb-1">Match Submitted</p>
                         <div className="flex items-center gap-2 bg-white/5 rounded-lg px-2 sm:px-3 py-2 border border-white/5 break-all">
-                          <Icon icon="solar:link-linear" className="h-3.5 w-3.5 text-purple-400 shrink-0" />
-                          <Link href={`https://sepolia.etherscan.io/tx/${txHash}`} target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-[11px] text-default-500 hover:text-purple-400 break-all transition-colors font-mono">{txHash}</Link>
+                          <span className="text-[10px] sm:text-[11px] text-default-500 break-all font-mono">{txHash}</span>
                         </div>
                         <div className="mt-2 sm:mt-3 flex gap-2 flex-wrap">
                           <Chip size="sm" variant="flat" className="bg-green-500/10 border border-green-500/20 text-green-300 text-[10px]"><Icon icon="solar:shield-check-linear" className="h-3 w-3 mr-1" />Encrypted</Chip>

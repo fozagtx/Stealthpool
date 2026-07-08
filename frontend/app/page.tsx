@@ -122,11 +122,7 @@ export default function Home() {
             <span className="text-sm font-bold gradient-text">StealthPool</span>
           </div>
           <div className="flex items-center gap-4 sm:gap-6">
-            <Link href="https://zama.ai" target="_blank" className="text-xs text-default-500 hover:text-purple-400 transition-colors">Zama fhEVM</Link>
-            <Link href="https://wagmi.sh" target="_blank" className="text-xs text-default-500 hover:text-purple-400 transition-colors">wagmi</Link>
-            <Link href="https://nextjs.org" target="_blank" className="text-xs text-default-500 hover:text-purple-400 transition-colors">Next.js</Link>
           </div>
-          <p className="text-[10px] sm:text-xs text-default-600">Built with Next.js 16 · wagmi · @zama-fhe/relayer-sdk</p>
         </div>
       </footer>
     </div>
